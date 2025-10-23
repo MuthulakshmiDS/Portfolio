@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* ---------------- Navbar ---------------- */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+/* ---------------- Hero ---------------- */
+.hero {
+  background: #222;
+  color: #fff;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero .highlight {
+  color: #ff9800;
+}
+.hero-actions {
+  margin-top: 20px;
+}
+
+/* ---------------- Buttons (Outlined) ---------------- */
+.btn {
+  background: transparent;       
+  border: 2px solid #ff9800;    
+  color: #ff9800;                
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.btn:hover {
+  background: #ff9800;           
+  color: #fff;                   
+}
+
+/* ---------------- Sections ---------------- */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+.projects {
+  background: #eee;
+}
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
